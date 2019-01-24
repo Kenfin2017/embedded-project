@@ -178,7 +178,7 @@ void setup() {
 
 	dht.begin();
 
-	//Serial.println("DHT11 Started..."); // debug
+	Serial.println("DHT11 Started..."); // debug
 }
 
 
