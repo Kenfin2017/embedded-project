@@ -1,0 +1,14 @@
+*.a 
+*.d 
+*.c 
+*.o 
+*.hex 
+*.lss 
+*.map 
+*.srec 
+*.eep 
+*.elf 
+*.xml 
+*.atsuo 
+*.mk 
+*.cppproj
