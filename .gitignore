@@ -12,3 +12,6 @@
 *.atsuo 
 *.mk 
 *.cppproj
+Makefile
+ArduinoCore
+.vs

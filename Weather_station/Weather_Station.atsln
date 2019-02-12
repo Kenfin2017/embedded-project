@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Atmel Studio Solution File, Format Version 11.00
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "Weather_station", "Weather_Station\Weather_station\Weather_station.cppproj", "{DCE6C7E3-EE26-4D79-826B-08594B9AD897}"
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "Weather_station", "Weather_Station\Weather_Station\Weather_station\Weather_station.cppproj", "{DCE6C7E3-EE26-4D79-826B-08594B9AD897}"
 EndProject
-Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "ArduinoCore", "Weather_Station\ArduinoCore\ArduinoCore.cppproj", "{457ECEB1-1905-430F-A309-874664D349D9}"
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "ArduinoCore", "Weather_Station\Weather_Station\ArduinoCore\ArduinoCore.cppproj", "{CA8AF3BF-FC3F-4FB6-A2E1-E4B8CD8A72CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Debug|AVR.Build.0 = Debug|AVR
 		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|AVR.ActiveCfg = Release|AVR
 		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|AVR.Build.0 = Release|AVR
-		{457ECEB1-1905-430F-A309-874664D349D9}.Debug|AVR.ActiveCfg = Debug|AVR
-		{457ECEB1-1905-430F-A309-874664D349D9}.Debug|AVR.Build.0 = Debug|AVR
-		{457ECEB1-1905-430F-A309-874664D349D9}.Release|AVR.ActiveCfg = Release|AVR
-		{457ECEB1-1905-430F-A309-874664D349D9}.Release|AVR.Build.0 = Release|AVR
+		{CA8AF3BF-FC3F-4FB6-A2E1-E4B8CD8A72CA}.Debug|AVR.ActiveCfg = Debug|AVR
+		{CA8AF3BF-FC3F-4FB6-A2E1-E4B8CD8A72CA}.Debug|AVR.Build.0 = Debug|AVR
+		{CA8AF3BF-FC3F-4FB6-A2E1-E4B8CD8A72CA}.Release|AVR.ActiveCfg = Release|AVR
+		{CA8AF3BF-FC3F-4FB6-A2E1-E4B8CD8A72CA}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
