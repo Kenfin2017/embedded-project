@@ -34,33 +34,11 @@ float tempFMIN= 0;
 float tempFMAX= 0;
 
 bool  isFirstExec   = true;
+// state variable: scale that temperature is displaying 
 char celciusOrFahren = 'c';
 bool reset = false;
 
-String txtTemp      = "";   // Temperature text
-String txtUmidita   = "";   // Humidity text
-String txtHeatTemp  = "";   // Heat Temperature text
-
-//
-// ******************************************************* [LOGIC] **************************************************
-//
-
-// debug
-void debugDataCelsius(float h, float t, float hit) {
-  Serial.print("Humidity: ");
-  Serial.print(h);
-  Serial.print(" \t");
-
-  Serial.print("Temperature: ");
-  Serial.print(t);
-  Serial.print(" *C ");
-
-  Serial.print("Heat Temp.: ");
-  Serial.print(hit, 1);
-  Serial.print(" *C ");
-
-  Serial.println("\t");
-}
+/***** [LOGIC] ****/
 
 String getTextTemparatureCentigrade() {
   String txt = "TEMP: ";
@@ -121,8 +99,6 @@ String getTextMinMaxTempFah() {
 }
 
 void readSensorData() {
-  //Serial.println("DHT11 sensor data request...");
-
   humidity = dht.readHumidity();            // Read humidity data
 
   tempCels = dht.readTemperature();         // Read temperature as Celsius
@@ -218,10 +194,7 @@ void scrollText(){
 /**** [SETUP] ****/
 
 
-void setup() {
-  
-  Serial.begin(9600);                // debug
-  
+void setup() {  
   lcd.begin(16, 2);                     // set up the LCD's number of columns and rows:
 
   dht.begin();
@@ -234,7 +207,7 @@ void setup() {
     delay(mediumDelay);
   }
   pinMode(SWITCH, INPUT);
-  //Serial.println("DHT11 Started..."); // debug
+  // attach interrupt to tactile switch
   attachInterrupt(digitalPinToInterrupt(SWITCH), changeTempScale, RISING);
 }
 
